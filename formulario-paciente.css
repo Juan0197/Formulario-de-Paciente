@@ -1,0 +1,18 @@
+input[type="date"]{
+    border: gold 10px solid;
+    border-radius: 2px;
+}
+
+input[type="number"]{
+    border-radius: 8px;
+}
+
+body{
+ background: greenyellow;   
+}
+
+.paso1{
+    background: #00cc99;
+    padding: 10px;
+}
+

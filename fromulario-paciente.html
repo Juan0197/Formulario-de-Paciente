@@ -1,62 +1,55 @@
 <html lang="es">
 <head>
-    <title>Formulario Paciente</title>
     <meta charset='utf-8'/>
+    <link href="formulario-paciente.css" media="all" type="text/css" rel="stylesheet">
+    <title>Formulario Paciente</title>
     </head>
-    <body bgcolor="yellow">
+    <body>
         <h1>Formulario para capturar los datos de un paciente</h1>
-        <form>
-            <label for="name">Nombre(s):</label>
-            <input type="text" name="Nombre"/>
-            <label for="name">Apellido Paterno:</label>
-            <input type="text" name="Apellido Paterno"/>
-            <label for="name">Apellido Materno:</label>
-            <input type="text" name="Apellido Materno"/>
-            <label for="name">Sexo:</label>
-            <input type="text" name="Sexo"/>
-            </form>
-        <form>
-            <label for="name">Peso:</label>
-            <input type="number" name="Peso"/>
-            <label for="name">Estatura:</label>
-            <input type="number" name="Estatura"/>
-        </form>
-        <form> 
-            <label for="years">Edad:</label>
-            <input type="text" name="Edad"/>
-            <label for="date">Fecha de Nacimiento:</label>
-            <input type="date" name="Fecha de Nacimiento"/>
-            <label for="name">Domicilio:</label>
-            <input type="text" name="Domicilio"/>
-            <label for="name">Colonia:</label>
-            <input type="text" name="Colonia"/>
-        </form>
-        <form>    
+            <form action="C:\Users\Juan\Documents\NetBeansProjects\Formulario-de-Paciente\formulariov2.html" method="post">
+            <div class="paso1">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="nombre"/>
+            </div>
+            <label for="name">Apellido Paterno</label>
+            <input type="text" name="Apellido Paterno"/> <br/>
+            <label for="name">Apellido Materno</label>
+            <input type="text" name="Apellido Materno"/> <br/>
+            <label for="name">Sexo</label>
+            <input type="text" name="Sexo"/> <br/>
+            <label for="name">Peso</label>
+            <input type="number" name="Peso"/> <br/>
+            <label for="name">Estatura</label>
+            <input type="number" name="Estatura"/> <br/> 
+            <label for="years">Edad</label>
+            <input type="text" name="Edad"/> <br/>
+            <label for="date">Fecha de Nacimiento</label>
+            <input type="date" name="Fecha de Nacimiento"/> <br/>
+            <label for="name">Domicilio</label>
+            <input id="domicilio" type="text" name="domicilio"/> <br/>
+            <label for="name">Colonia</label>
+            <input type="text" name="Colonia"/> <br/>    
         <label for="name">Delegación:</label>
-            <input type="text" name="Delegación"/>
+            <input type="text" name="Delegación"/> <br/>
             <label for="name">C.P. :</label>
-            <input type="number" name="C.P."/>
+            <input type="number" name="C.P."/> <br/>
+            <label for="date">Fecha de Ingreso</label>
+            <input type="date" name="Fecha de Ingreso"/> <br/>
+            <label for="name">Hora de Ingreso</label>
+            <input type="time" name="Hora de Ingreso"/> <br/>
+            <label for="name">Teléfono</label>
+            <input type="tel" name="Teléfono"/> <br/>
+            <label for="name">Doctor que lo antedió</label>
+            <input type="text" name="Doctor que lo antendió"/> <br/>
+            <label for="name">Diagnóstico</label>
+            <input type="text" name="Diagnóstico"/> <br/>
+            <div>
+            <label for="name">Observaciones</label>
+            <input id="observaciones" type="text" name="Observaciones" onfocus="colorear();" onblur="descolorear();"/> <br/>
+            </div>
+            <input type="submit" value="enviar" onclick="if(validar()){return true;}else{return false;}"/>
         </form>
-        <form>
-            <label for="date">Fecha de Ingreso:</label>
-            <input type="date" name="Fecha de Ingreso"/>
-            <label for="name">Hora de Ingreso:</label>
-            <input type="time" name="Hora de Ingreso"/>
-            <label for="name">Teléfono:</label>
-            <input type="tel" name="Teléfono"/>
-        </form>
-        <form>
-            <label for="name">Doctor que lo antedió:</label>
-            <input type="text" name="Doctor que lo antendió"/>
-        </form>
-        <form>
-            <label for="name">Diagnóstico:</label>
-            <input type="text" name="Diagnóstico"/>
-        </form>
-        <form>
-            <label for="name">Observaciones:</label>
-            <input type="text" name="Observaciones"/>
-            <input type="submit" value="Enviar" onclick="confirmar()"/>
-        </form>
+            <script src="C:\Users\Juan\Documents\NetBeansProjects\Formulario-de-Paciente\formulario-paciente.js" type="text/javascript"></script>
     </body>
 </html>
+
